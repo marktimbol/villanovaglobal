@@ -7,3 +7,39 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.centered-xy {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar {
+	display: none;
+	// position: absolute;
+}
+
+.Slideshow {
+
+}
+
+.Slide {
+	width: 100%;
+	height: 100vh;
+	background: url('/images/slides/slide1.jpg') no-repeat;
+	background-size: cover;
+}
+
+.Slide__title {
+    color: white;
+    font-size: 7rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Slide__description {
+	color: white;
+    font-size: 2rem;
+    text-align: center;
+}
