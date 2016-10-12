@@ -13,6 +13,7 @@
         </div>
     </div>
 </div> --}}
+
 	<div class="Slideshow">
 		<div class="Slides">
 			<div class="Slide centered-xy">
@@ -21,6 +22,10 @@
 					<p class="Slide__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</p>
 				</div>
 			</div>
+		</div>
+
+		<div class="Inquiry">
+			
 		</div>
 	</div>
 @endsection
