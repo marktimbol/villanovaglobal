@@ -1,5 +1,8 @@
 <?php
 
+use App\Mail\SendInquiry;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,8 +17,13 @@
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 Route::resource('inquiries', 'InquiriesController');
 
-Route::get('/db', function() {
-	return getenv('DB_DATABASE');
+Route::get('/t', function() {
+	$inquiry = factory(App\Inquiry::class)->create();
+
+	Mail::to('mark.timbol@hotmail.com')
+		->send(new SendInquiry($inquiry));
+
+	return 'done';
 });
 
 Auth::routes();
