@@ -57,7 +57,7 @@ return [
 
     'from' => [
         'address' => 'no-reply@offplanpropertydubai.com',
-        'name' => 'Offplan Property',
+        'name' => 'Off Plan Property',
     ],
 
     /*
