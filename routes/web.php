@@ -17,15 +17,6 @@ use Illuminate\Support\Facades\Mail;
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 Route::resource('inquiries', 'InquiriesController');
 
-Route::get('/t', function() {
-	$inquiry = factory(App\Inquiry::class)->create();
-
-	Mail::to('mark.timbol@hotmail.com')
-		->send(new SendInquiry($inquiry));
-
-	return 'done';
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
