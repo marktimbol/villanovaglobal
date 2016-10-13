@@ -23,7 +23,7 @@
 						{{ csrf_field() }}
 						<div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
 							<label for="name">Name *</label>
-							<input type="text" name="name" class="form-control"  />
+							<input type="text" name="name" class="form-control" value="{{ old('name') }}" />
 							@if( $errors->has('name') )
 								<span class="help-block">
 									<strong>{{ $errors->first('name') }}</strong>
@@ -32,7 +32,7 @@
 						</div>
 						<div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
 							<label for="name">eMail *</label>
-							<input type="email" name="email" id="email" class="form-control"  />
+							<input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}" />
 							@if( $errors->has('email') )
 								<span class="help-block">
 									<strong>{{ $errors->first('email') }}</strong>
@@ -41,7 +41,7 @@
 						</div>
 						<div class="form-group {{ $errors->has('phone') ? 'has-error' : '' }}">
 							<label for="phone">Phone *</label>
-							<input type="text" name="phone" id="phone" class="form-control"  />
+							<input type="text" name="phone" id="phone" class="form-control" value="{{ old('phone') }}" />
 							@if( $errors->has('phone') )
 								<span class="help-block">
 									<strong>{{ $errors->first('phone') }}</strong>
@@ -50,11 +50,13 @@
 						</div>
 						<div class="form-group">
 							<label for="passport">Passport No.</label>
-							<input type="text" name="passport" id="passport" class="form-control"  />
+							<input type="text" name="passport" id="passport" class="form-control" value="{{ old('passport') }}" />
 						</div>
 						<div class="form-group">
 							<label for="message">Message</label>
-							<textarea name="message" id="message" class="form-control" ></textarea>
+							<textarea name="message" id="message" class="form-control">
+								{{ old('message') }}
+							</textarea>
 						</div>
 						<p>&nbsp;</p>
 						<div class="form-group">
