@@ -8,15 +8,17 @@
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+// Sweetalert
+@import "node_modules/sweetalert/dev/sweetalert";
+
+header {
+	position: absolute;
+}
+
 .centered-xy {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-
-.navbar {
-	display: none;
-	// position: absolute;
 }
 
 .Slideshow {
@@ -28,6 +30,12 @@
 	height: 100vh;
 	background: url('/images/slides/slide1.jpg') no-repeat;
 	background-size: cover;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	padding: 30px;
 }
 
 .Slide__title {
@@ -44,4 +52,18 @@
     text-align: center;
 }
 
-@import 'components/HomeVideo'
+.Inquiry {
+    background: rgba(0,0,0,0.7);
+
+    label {
+    	color: white;
+    }
+}
+
+.Inquiry__title {
+	color: white;
+	text-align: center;
+}
+
+@import 'components/HomeVideo';
+@import 'components/Overwrite';

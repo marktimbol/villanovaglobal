@@ -11,6 +11,6 @@ class PagesTest extends TestCase
     public function test_it_displays_the_homepage()
     {
     	$this->visit('/')
-    		->see('Villa Nova Global');
+    		->see('Offplan Properties');
     }
 }

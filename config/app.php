@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Villa Nova Global',
+    'name' => 'Offplan Properties Dubai',
 
     /*
     |--------------------------------------------------------------------------
@@ -167,7 +167,7 @@ return [
          * Package Service Providers...
          */
 
-        //
+        Laracasts\Flash\FlashServiceProvider::class,
 
         /*
          * Application Service Providers...
