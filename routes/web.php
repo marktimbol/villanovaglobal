@@ -14,6 +14,10 @@
 Route::get('/', ['as' => 'home', 'uses' => 'PagesController@home']);
 Route::resource('inquiries', 'InquiriesController');
 
+Route::get('/db', function() {
+	return getenv('DB_DATABASE');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
