@@ -17,7 +17,7 @@
 	<div class="Slideshow">
 		<div class="Slides">
 			<div class="Slide">
-				<div class="Inquiry col-md-4 col-xs-12">
+				<div class="Inquiry col-md-4 col-xs-8">
 					<h3 class="Inquiry__title">Interested?</h3>
 					<form method="POST" action="{{ route('inquiries.store') }}">
 						{{ csrf_field() }}
